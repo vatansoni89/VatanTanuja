@@ -21,6 +21,24 @@ namespace EventsAndDelegate
             }
         }
     }
+
+    /// <summary>
+    /// Events using EventHandler class.
+    /// </summary>
+    public class Nation
+    { 
+        public event EventHandler<NationInfoEventArgs> NationSpoke;
+
+        public void OnNationSpoke(string nation, int pop)
+        { 
+            EventHandler<NationInfoEventArgs> del = NationSpoke as EventHandler<NationInfoEventArgs>;
+            if (del!=null)
+            {
+                del(this, new NationInfoEventArgs(){ Name = nation,Population=pop});
+            }
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -28,6 +46,15 @@ namespace EventsAndDelegate
             Bank bank = new Bank();
             bank.AnnouncementHappened += Bank_AnnouncementHappenedIndia;
             bank.OnAnnouncement("India");
+
+            Nation nation = new Nation();
+            nation.NationSpoke += Nation_NationSpoke;
+            nation.OnNationSpoke("USA",999);
+        }
+
+        private static void Nation_NationSpoke(object sender, NationInfoEventArgs e)
+        {
+            Console.WriteLine(e.Name+" is great nation. Its population is "+e.Population);
         }
 
         private static void Bank_AnnouncementHappenedIndia(string msz)
