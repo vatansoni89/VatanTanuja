@@ -23,7 +23,7 @@ namespace EventsAndDelegate
     }
 
     /// <summary>
-    /// Events using EventHandler class.
+    /// Events using EventHandler delegate.
     /// </summary>
     public class Nation
     { 
