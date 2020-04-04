@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfWorkDesignPatternConsoleApp1", "ChainOfWorkDesignPatternConsoleApp1\ChainOfWorkDesignPatternConsoleApp1.csproj", "{184B2481-5711-46C1-81A8-B8CAB6A837D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example2ConsoleApp1", "Example2ConsoleApp1\Example2ConsoleApp1.csproj", "{58E55BA5-9258-4588-95FE-442FB0E2AF52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184B2481-5711-46C1-81A8-B8CAB6A837D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184B2481-5711-46C1-81A8-B8CAB6A837D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184B2481-5711-46C1-81A8-B8CAB6A837D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184B2481-5711-46C1-81A8-B8CAB6A837D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E55BA5-9258-4588-95FE-442FB0E2AF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E55BA5-9258-4588-95FE-442FB0E2AF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E55BA5-9258-4588-95FE-442FB0E2AF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E55BA5-9258-4588-95FE-442FB0E2AF52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38B4DC54-6116-41A7-914B-8CF0B8180A67}
+	EndGlobalSection
+EndGlobal

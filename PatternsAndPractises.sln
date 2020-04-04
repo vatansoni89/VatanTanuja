@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegate", "EventsAndDelegate\EventsAndDelegate.csproj", "{E785393A-4A0E-45E7-8BF5-BB9A14341EB0}"
 EndProject
@@ -9,7 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventsAndDelPractise", "Eve
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mediator", "Mediator", "{52601A6D-F429-4B70-B055-94E83F8A46BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before-CommunicatingBetweenControls", "D:\Data\Vatan\Learnings\AA Authors\Dan Wahlin\5-csharp-events-delegates-m5-exercise-files\Code\Before\CommunicatingBetweenControls\CommunicatingBetweenControls\Before-CommunicatingBetweenControls.csproj", "{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Before-CommunicatingBetweenControls", "MediatorPattern\Before-CommunicatingBetweenControls.csproj", "{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibilities", "ChainOfResponsibilities", "{5B19FC94-FF6B-4228-84AE-9EB4A0E320BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfWorkDesignPatternConsoleApp1", "ChainOfWorkDesignPatternConsoleApp1\ChainOfWorkDesignPatternConsoleApp1\ChainOfWorkDesignPatternConsoleApp1.csproj", "{E3E41D91-852B-411E-92B1-49FDC168A55E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example2ConsoleApp1", "ChainOfWorkDesignPatternConsoleApp1\Example2ConsoleApp1\Example2ConsoleApp1.csproj", "{9B3E608C-319B-47DB-957F-84BC5E9EAE98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +31,14 @@ Global
 		{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD8CBEB6-507B-4758-8A6E-C4A7026E6259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E41D91-852B-411E-92B1-49FDC168A55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E41D91-852B-411E-92B1-49FDC168A55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E41D91-852B-411E-92B1-49FDC168A55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E41D91-852B-411E-92B1-49FDC168A55E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +46,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E785393A-4A0E-45E7-8BF5-BB9A14341EB0} = {CD4BBDBE-3283-4A05-8548-CCE1CB13B200}
 		{CD8CBEB6-507B-4758-8A6E-C4A7026E6259} = {52601A6D-F429-4B70-B055-94E83F8A46BE}
+		{E3E41D91-852B-411E-92B1-49FDC168A55E} = {5B19FC94-FF6B-4228-84AE-9EB4A0E320BB}
+		{9B3E608C-319B-47DB-957F-84BC5E9EAE98} = {5B19FC94-FF6B-4228-84AE-9EB4A0E320BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A770B9DA-4369-4A9F-B7FA-A2AF798F4980}
