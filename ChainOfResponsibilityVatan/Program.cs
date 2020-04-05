@@ -9,7 +9,7 @@ namespace Chain_of_Responsibility_First_Look
     {
         static void Main(string[] args)
         {
-            var user = new User("Filip Ekberg", 
+            var user = new User("Fi", 
                 "870101XXXX", 
                 new RegionInfo("SE"), 
                 new DateTimeOffset(1987, 01, 29, 00, 00, 00, TimeSpan.FromHours(2)));

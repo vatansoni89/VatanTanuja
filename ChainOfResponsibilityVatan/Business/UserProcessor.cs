@@ -1,4 +1,5 @@
-﻿using Chain_of_Responsibility_First_Look.Business.Models;
+﻿using Chain_of_Responsibility_First_Look.Business.Handlers.UserValidation;
+using Chain_of_Responsibility_First_Look.Business.Models;
 using Chain_of_Responsibility_First_Look.Business.Validators;
 
 namespace Chain_of_Responsibility_First_Look.Business
@@ -10,26 +11,22 @@ namespace Chain_of_Responsibility_First_Look.Business
 
         public bool Register(User user)
         {
-            if (!socialSecurityNumberValidator.Validate(user.SocialSecurityNumber, user.CitizenshipRegion))
+            //Applied chain of respo.
+            try
+            {
+                var handler = new SocialSecurityNumberValidatorHandler();
+                handler.SetNext(new NameValidationHandler())
+                    .SetNext(new AgeValidationHandler())
+                    .SetNext(new CitizanshipRegionValidationHandler());
+
+                handler.Handle(user);
+            }
+            catch (System.Exception ex)
             {
                 return false;
             }
-            else if (user.Age < 18)
-            {
-                return false;
-            }
-            else if (user.Name.Length <= 1)
-            {
-                return false;
-            }
-            else if (user.CitizenshipRegion.TwoLetterISORegionName == "NO")
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+
+            return true;
         }
     }
 }
