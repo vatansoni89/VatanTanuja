@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfWorkDesignPatternCon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example2ConsoleApp1", "ChainOfWorkDesignPatternConsoleApp1\Example2ConsoleApp1\Example2ConsoleApp1.csproj", "{9B3E608C-319B-47DB-957F-84BC5E9EAE98}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibilityVatan", "ChainOfResponsibilityVatan", "{89552617-D29A-422B-A127-558BC709E8FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chain of Responsibility First Look", "ChainOfResponsibilityVatan\Chain of Responsibility First Look.csproj", "{646BA75D-6074-4DC0-B13B-809ABE601988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B3E608C-319B-47DB-957F-84BC5E9EAE98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{646BA75D-6074-4DC0-B13B-809ABE601988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646BA75D-6074-4DC0-B13B-809ABE601988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646BA75D-6074-4DC0-B13B-809ABE601988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646BA75D-6074-4DC0-B13B-809ABE601988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{CD8CBEB6-507B-4758-8A6E-C4A7026E6259} = {52601A6D-F429-4B70-B055-94E83F8A46BE}
 		{E3E41D91-852B-411E-92B1-49FDC168A55E} = {5B19FC94-FF6B-4228-84AE-9EB4A0E320BB}
 		{9B3E608C-319B-47DB-957F-84BC5E9EAE98} = {5B19FC94-FF6B-4228-84AE-9EB4A0E320BB}
+		{646BA75D-6074-4DC0-B13B-809ABE601988} = {89552617-D29A-422B-A127-558BC709E8FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A770B9DA-4369-4A9F-B7FA-A2AF798F4980}
