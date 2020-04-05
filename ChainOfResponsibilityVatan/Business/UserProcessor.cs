@@ -1,6 +1,7 @@
 ﻿using Chain_of_Responsibility_First_Look.Business.Handlers.UserValidation;
 using Chain_of_Responsibility_First_Look.Business.Models;
 using Chain_of_Responsibility_First_Look.Business.Validators;
+using System;
 
 namespace Chain_of_Responsibility_First_Look.Business
 {
@@ -23,6 +24,7 @@ namespace Chain_of_Responsibility_First_Look.Business
             }
             catch (System.Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return false;
             }
 
