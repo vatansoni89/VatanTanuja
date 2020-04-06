@@ -14,9 +14,9 @@ namespace Chain_of_Responsibility_First_Look.Business.Handlers
     {
         private Handler<T> Next { get;set;}
 
-        public virtual void Handle(T request)
+        public virtual void Handle(T user)
         {
-           Next?.Handle(request);
+           Next?.Handle(user);
         }
 
         public Handler<T> SetNext(Handler<T> next)

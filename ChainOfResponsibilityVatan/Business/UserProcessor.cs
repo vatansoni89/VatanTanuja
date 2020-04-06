@@ -15,7 +15,7 @@ namespace Chain_of_Responsibility_First_Look.Business
             //Applied chain of respo.
             try
             {
-                var handler = new SocialSecurityNumberValidatorHandler();
+                var handler = new SocialSecurityNumberValidatonHandler();
                 handler.SetNext(new NameValidationHandler())
                     .SetNext(new AgeValidationHandler())
                     .SetNext(new CitizanshipRegionValidationHandler());

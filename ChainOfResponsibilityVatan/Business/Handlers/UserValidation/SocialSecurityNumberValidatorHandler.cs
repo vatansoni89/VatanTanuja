@@ -7,17 +7,17 @@ using System.Text;
 
 namespace Chain_of_Responsibility_First_Look.Business.Handlers.UserValidation
 {
-    public class SocialSecurityNumberValidatorHandler: Handler<User>
+    public class SocialSecurityNumberValidatonHandler: Handler<User>
     {
         private SocialSecurityNumberValidator socialSecurityNumberValidator = new SocialSecurityNumberValidator();
 
-        public override void Handle(User request)
+        public override void Handle(User user)
         {
-            if (!socialSecurityNumberValidator.Validate(request.SocialSecurityNumber, request.CitizenshipRegion))
+            if (!socialSecurityNumberValidator.Validate(user.SocialSecurityNumber, user.CitizenshipRegion))
             {
                 throw new UserValidationException("SocialSecurityNumber");
             }
-            base.Handle(request);
+            base.Handle(user);
         }
     }
 }
